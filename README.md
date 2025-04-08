@@ -39,26 +39,26 @@ To verify that the script functions correctly, follow these steps:
 1. Import pandas
     ```bash
     import pandas as pd
-   * Explanation:
+* Explanation:
     - This imports the pandas library and gives it the alias pd.
 2. Load the dataset
     ```bash
     df = pd.read_csv("Salaries.csv")
-    * Explanation:
-    - pd.read_csv("Salaries.csv") reads the Salaries.csv file and loads it into a pandas DataFrame (a table-like structure).
+* Explanation:
+- pd.read_csv("Salaries.csv") reads the Salaries.csv file and loads it into a pandas DataFrame (a table-like structure).
 3. Show Basic Info
    ```bash
    print("Dataset Preview:")
-print(df.head())
+   print(df.head())
 * Explanation:
   - df.head() displays the first 5 rows of the dataset. This helps you get a quick look at the structure of the data and its contents (e.g., values, column names).
 4. Show columns in the dataset
    ```bash
    print("Columns in the dataset:")
-print(df.columns.tolist())
+   print(df.columns.tolist())
 * Explanation:
-  - df.columns returns the column names of the DataFrame as an Index object.
-  - .tolist() converts the Index object into a regular Python list, which is easier to read and use.
+- df.columns returns the column names of the DataFrame as an Index object.
+- .tolist() converts the Index object into a regular Python list, which is easier to read and use.
 
 5. Show Summary statistics
     ```bash
