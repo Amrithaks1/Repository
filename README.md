@@ -14,5 +14,6 @@ This project analyzes faculty salary data using Python to explore relationships 
 - pandas
 
 # Installing
+```bash
 1. Clone this repository to your local machine:
    git clone https://github.com/yourusername/faculty-salaries-analysis.git
