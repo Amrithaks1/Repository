@@ -28,12 +28,11 @@ This project analyzes faculty salary data using Python to explore relationships 
    pip install pandas
 
 ### Running the Tests
-=================
 To verify that the script functions correctly, follow these steps:
 1. Ensure you have a sample dataset (CSV file) containing salaries data.
 2. Modify the script to read from the dataset if necessary.
 3. Execute the script using the following command:
-```sh
+```bash
 python Salaries.py
 
 5. Validate the output to ensure:
