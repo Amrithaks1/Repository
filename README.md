@@ -96,7 +96,6 @@ This notebook does not contain unit tests but includes multiple analytical steps
   print(avg_salary)
   else:
   print("\nRequired columns ('rank' and 'salary') not found in the dataset.")
-  
 **Explanation**:
 - df['salary'] = pd.to_numeric(df['salary'], errors='coerce') attempts to convert the salary column to numeric values (e.g., integers or floats).
 - df.groupby('rank')['salary'].mean() groups the dataset by the rank column and calculates the average salary for each rank.
@@ -105,13 +104,13 @@ This notebook does not contain unit tests but includes multiple analytical steps
 
 ---
 
-## Deployment
+### Deployment
 
 This is a standalone Jupyter Notebook intended for educational or analytical use. No deployment setup is needed.
 
 ---
 
-## Author
+### Author
 
 **AMRITHA KOZHIPARAMBIL SURENDRAN**
 
