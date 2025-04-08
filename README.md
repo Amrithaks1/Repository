@@ -57,13 +57,13 @@ To verify that the script functions correctly, follow these steps:
    print("Columns in the dataset:")
    print(df.columns.tolist())
 * Explanation:
-- df.columns returns the column names of the DataFrame as an Index object.
-- .tolist() converts the Index object into a regular Python list, which is easier to read and use.
+ - df.columns returns the column names of the DataFrame as an Index object.
+ - .tolist() converts the Index object into a regular Python list, which is easier to read and use.
 
 5. Show Summary statistics
     ```bash
     print("\nSummary Statistics:")
-print(df.describe(include='all'))
+    print(df.describe(include='all'))
 * Explanation:
   - df.describe(include='all') generates summary statistics of the dataset.
   - When include='all' is added, it also includes stats for non-numeric columns (e.g., categorical variables like rank or sex), such as the most frequent value (top) and its frequency (freq).
