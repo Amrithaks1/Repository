@@ -83,23 +83,7 @@ This notebook does not contain unit tests but includes multiple analytical steps
 - df.describe(include='all') generates summary statistics of the dataset.
 - By default, describe() provides statistics for numerical columns (e.g., count, mean, min, max, etc.).
 - When include='all' is added, it also includes stats for non-numeric columns (e.g., categorical variables like rank or sex), such as the most frequent value (top) and its frequency (freq).
-- 
-6. **Check if required columns are present**
-  ```bash
-  if 'rank' in df.columns and 'salary' in df.columns:
-  # Clean salary column if needed
-  df['salary'] = pd.to_numeric(df['salary'], errors='coerce')
-
-  # Average salary by rank
-  avg_salary = df.groupby('rank')['salary'].mean().sort_values(ascending=False)
-  print("\nAverage Salary by Rank:")
-  print(avg_salary)
-  else:
-  print("\nRequired columns ('rank' and 'salary') not found in the dataset.")
-**Explanation**:
-- df['salary'] = pd.to_numeric(df['salary'], errors='coerce') attempts to convert the salary column to numeric values (e.g., integers or floats).
-- df.groupby('rank')['salary'].mean() groups the dataset by the rank column and calculates the average salary for each rank.
-- .sort_values(ascending=False) sorts the results in descending order to show the highest average salary first.
+  
 
 
 ---
