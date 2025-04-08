@@ -53,17 +53,20 @@ This notebook does not contain unit tests but includes multiple analytical steps
    import pandas as pd
 **Explanation**:
 - This imports the pandas library and gives it the alias pd.
+  
 2. **Load the datset**
    ```bash
    df = pd.read_csv("Salaries.csv")
 **Explanation**:
 - pd.read_csv("Salaries.csv") reads the Salaries.csv file and loads it into a pandas DataFrame (a table-like structure).
+  
 3. **Show basic info**
    ```bash
    print("Dataset Preview:")
    print(df.head())
 **Explanation**:
 - df.head() displays the first 5 rows of the dataset. This helps you get a quick look at the structure of the data and its contents (e.g., values, column names).
+  
 4. **Show columns in dataset**
    ```bash
    print("Columns in the dataset:")
@@ -71,6 +74,7 @@ This notebook does not contain unit tests but includes multiple analytical steps
 **Explanation**:
 - df.columns returns the column names of the DataFrame as an Index object.
 - .tolist() converts the Index object into a regular Python list, which is easier to read and use.
+  
 5. **Show summary statistics**
    ```bash
    print("\nSummary Statistics:")
@@ -79,6 +83,7 @@ This notebook does not contain unit tests but includes multiple analytical steps
 - df.describe(include='all') generates summary statistics of the dataset.
 - By default, describe() provides statistics for numerical columns (e.g., count, mean, min, max, etc.).
 - When include='all' is added, it also includes stats for non-numeric columns (e.g., categorical variables like rank or sex), such as the most frequent value (top) and its frequency (freq).
+- 
 6. **Check if required columns are present**
   ```bash
   if 'rank' in df.columns and 'salary' in df.columns:
@@ -91,6 +96,7 @@ This notebook does not contain unit tests but includes multiple analytical steps
   print(avg_salary)
   else:
   print("\nRequired columns ('rank' and 'salary') not found in the dataset.")
+  
 **Explanation**:
 - df['salary'] = pd.to_numeric(df['salary'], errors='coerce') attempts to convert the salary column to numeric values (e.g., integers or floats).
 - df.groupby('rank')['salary'].mean() groups the dataset by the rank column and calculates the average salary for each rank.
