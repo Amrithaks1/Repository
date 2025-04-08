@@ -78,7 +78,7 @@ To verify that the script functions correctly, follow these steps:
     avg_salary = df.groupby('rank')['salary'].mean().sort_values(ascending=False)
     print("\nAverage Salary by Rank:")
     print(avg_salary)
-else:
+   else:
     print("\nRequired columns ('rank' and 'salary') not found in the dataset.")
     * Explanation:
     - df['salary'] = pd.to_numeric(df['salary'], errors='coerce') attempts to convert the salary column to numeric values (e.g., integers or floats).
